@@ -15,10 +15,9 @@
 python3 cors.py -u <url>
 
 ## Tool Description:
-CORS (Cross-Origin Resource Sharing) Scanner is a Python tool designed to find potential CORS vulnerabilities in web applications. It helps security professionals and developers identify misconfigurations that could lead to security risks.
+CORS (Cross-Origin Resource Sharing) Scanner is a Python tool designed to find potential CORS vulnerabilities in web applications.
 
 ## Options:
-
 - `-h, --help`: Show help message and exit.
 - `-u URL, --url URL`: Specify the target URL.
 - `-x ORIGIN, --origin ORIGIN`: Custom origin header.
@@ -30,7 +29,6 @@ CORS (Cross-Origin Resource Sharing) Scanner is a Python tool designed to find p
 - `-o OUTPUT_FILE, --output_file OUTPUT_FILE`: Output file to save potential vulnerabilities.
 
 ## Example Usage:
-
 **To scan a specific URL:**
 python3 cors.py -u https://example.com
 

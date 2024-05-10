@@ -128,6 +128,10 @@ def main():
     if cookie:
         s.headers['Cookie'] = f'session={cookie}'
 
+    if '-h' in sys.argv or '--help' in sys.argv:
+        parser.print_help()
+        exit(0)
+
     if wordlist:
         with open(args.wordlist, 'r') as f:
             wordlist_urls = f.readlines()

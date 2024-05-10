@@ -41,3 +41,8 @@ python3 cors.py -u https://example.com -x https://custom-origin.com
 python3 cors.py -u https://example.com -o output.txt
 
 For more details on usage and options, refer to the help message provided by the tool.
+
+## BUG ?
+- Submit new issue
+- pm me in insta
+- do you want ask about the tool ? you can add me in instagram : 0x.ans

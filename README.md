@@ -44,5 +44,5 @@ For more details on usage and options, refer to the help message provided by the
 
 ## BUG ?
 - Submit new issue
-- pm me in insta
+- dm me in insta
 - do you want ask about the tool ? you can add me in instagram : 0x.ans

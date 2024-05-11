@@ -111,11 +111,13 @@ def random_user_agent():
 
 def check_url_reachability(url):
     """Check if a URL is reachable."""
+    if not url.startswith("http://") and not url.startswith("https://"):
+        url = "http://" + url
     try:
         requests.get(url)
-        return True
+        return True, url
     except requests.exceptions.RequestException:
-        return False
+        return False, url
 
 
 def main():
@@ -169,7 +171,8 @@ def main():
                         print(r + f"[-] Unable to reach or resolve domain: {wordlist_url}")
 
     else:
-        if check_url_reachability(url):
+        if check_url_reachability(url)[0]:
+            url = check_url_reachability(url)[1]
             search_for_pages(s, url, verbose=verbose, proxies=proxies)
         else:
             print(r + f"[-] Unable to reach or resolve domain: {b}{url}")
@@ -182,7 +185,6 @@ def main():
         test_cors(s, url, origin_header, default_output_file, verbose=verbose, proxies=proxies)
 
     print('\nCORS testing completed.')
-
 
 if __name__ == '__main__':
     os.system('cls' if os.name == 'nt' else 'clear')

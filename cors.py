@@ -30,7 +30,7 @@ banner = r"""
       | $$      | $$  | $$| $$       \____  $$
       |  $$$$$$$|  $$$$$$/| $$       /$$$$$$$/
        \_______/ \______/ |__/      |_______/ 
-                                    @0x.ans
+                                    0xans
 """
 
 def search_for_pages(s, url, verbose=True, proxies=None):

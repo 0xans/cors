@@ -1,6 +1,6 @@
 # CORS Scanner Tool
 ## Name: CORS
-## Author: 0x.ans
+## Author: 0xans
 ## Contact: Instagram: [0x.ans](https://instagram.com/0x.ans)
 
        /$$$$$$$  /$$$$$$   /$$$$$$   /$$$$$$$
